@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>GRADE CALCULATOR</title>
+</head>
+<body>
+    <img id="header" src="img/header.png">
+    <br><b>Input Grades:</b><br>
+    <form>
+        <table>
+            <caption>HOMEWORK</caption>
+            <tr>
+                <th>Grades</th>
+                <th>Weight</th>
+                <th>Current Grade</th>
+            </tr>
+            <tr>
+                <td><input  id="hg" title="hwgrades" value="90, 45, 0, 75"></td>
+                <td><input id="hw" title="hwweight" value="20"></td>
+                <td id="hgrade"></td>
+            </tr>
+        </table>
+    </form><br>
+    <form>
+        <table>
+            <caption>QUIZZES</caption>
+            <tr>
+                <th>Grades</th>
+                <th>Weight</th>
+                <th>Current Grade</th>
+            </tr>
+            <tr>
+                <td><input  id="qg" title="quizgrades" value="88, 55, 93"></td>
+                <td><input id="qw" title="quizweight" value="30"></td>
+                <td id="qgrade"></td>
+            </tr>
+        </table>
+    </form><br>
+    <form>
+        <table>
+            <caption>TESTS</caption>
+            <tr>
+                <th>Grades</th>
+                <th>Weight</th>
+                <th>Current Grade</th>
+            </tr>
+            <tr>
+                <td><input  id="tg" title="testgrades" value="92, 89, 81, 85"></td>
+                <td><input id="tw" title="testweight" value="40"></td>
+                <td id="tgrade"></td>
+            </tr>
+            </table>
+    </form><br>
+    <form>
+        <table>
+            <caption>MIDTERM</caption>
+            <tr>
+                <th>Grades</th>
+                <th>Weight</th>
+                <th>Current Grade</th>
+            </tr>
+            <tr>
+                <td><input  id="mg" title="midgrades" value="100"></td>
+                <td><input id="mw" title="midweight" value="10"></td>
+                <td id="mgrade"></td>
+            </tr>
+        </table>
+    </form><br>
+    <button id="gradecalc" onclick="calculateCurrentGrade()">Calculate Current Grade</button><br><br>
+    <table>
+        <tr>
+            <th>Current Grade</th>
+            <td id=currentgrade>____</td>
+        </tr>
+    </table>
+    <br>
+    <form>
+        <table>
+            <caption>What do I need on the final?</caption>
+            <tr>
+                <th>Desired Grade</th>
+                <th>Final Weight</th>
+                <th>Final Grade Needed</th>
+            </tr>
+            <tr>
+                <td><input  id="finaldesired" title="finaldesired" value="80"></td>
+                <td><input id="finalweight" title="finalweight" value="15"></td>
+                <td id="finalneeded"></td>
+            </tr>
+        </table>
+    </form><br>
+    <button id="finalgrade" onclick="calculateFinalGrade()">Calculate Final Exam Grade Needed</button>
+</body>
+</html>
+
